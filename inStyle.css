@@ -1,0 +1,20 @@
+body{
+    background-color: forestgreen;
+    color: yellow;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    height: 6000px;
+    width: 200px;
+    float:left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+#pic1{
+    margin-right: 200px;
+}

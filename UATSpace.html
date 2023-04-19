@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+    This is my UAT Space Page
+    It was created in my CSC102 class from Spring 2023
+    this is for wk8 
+    created by:
+    matt Prater
+    mprater@uat.edu
+-->
+<html>
+
+<head>
+    <!--This the head, it is where all the behind the background stuff goes on-->
+    <title>
+        Prof. Prater's UATSpace page
+    </title>
+    <script src="code.js"></script>
+    <script src="class.js"></script>
+    <script src="dataLoader.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        var theTime = new Date();
+        var timeInterval = 5000;
+        var lastIteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
+</head>
+
+<body>
+    <table>     <!--table so picture can be next to Welcome to UAT Space-->
+        <td><img src="UAT_Space.jpg"></td>
+        <td><h1 style="color:blue;">
+            Welcome the the UAT Space Page
+        </h1></td>
+    </table>
+    <br>
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tr id="time_seconds"></tr>
+        <tr id="latitude"></tr>
+        <tr id="longitude"></tr>
+        <tr id="gps_altitude"></tr>
+        <tr id="bmp_altitude"></tr>
+        <tr id="bmp_pressure"></tr>
+        <tr id="bmp_temperature"></tr>
+        <tr id="dig_temperature"></tr>
+        <tr id="css_temperature"></tr>
+        <tr id="css_eCO2"></tr>
+        <tr id="css_TVOC"></tr>
+        <tr id="UV"></tr>
+        <tr id="accelX"></tr>
+        <tr id="accelY"></tr>
+        <tr id="accelZ"></tr>
+        <tr id="magneticX"></tr>
+        <tr id="magneticY"></tr>
+        <tr id="magneticZ"></tr>
+        <tr id="gyroX"></tr>
+        <tr id="gyroY"></tr>
+        <tr id="gyroZ"></tr>
+    </table>
+    <br>
+    <br>
+    The current Time is: <div id="clockTime">Press start to display current time</div><br>
+    <br>
+    <br>
+    <button class="button" id="startButton" onclick="startFun();">Start</button>
+    <button class="button" id="stopButton" onclick="stopFun();">Stop</button>
+    <br>
+    <br>
+
+    <h2>Craps game</h2>
+    <div id="die1Res">Die 1 Result</div><br>
+    <div id="die2Res">Die 2 Result</div><br>
+    <div id="diceSum">Sum of Die 1 and Die 2</div><br>
+    <div id="gameRes">Game Result</div><br>
+    <button onclick="playCraps()">Play Craps!</button><br>
+    <br>
+    wins<br>
+    <div id="winsRes">0</div><br>
+    loses<br>
+    <div id="losesRes">0</div><br>
+    <div class="drawClass">draws<br></div>
+    <div id="drawsRes">0</div><br>
+    <br>
+    <h2>Play Space Sounds</h2>
+    <button class="lgButton" ondblclick="pauseStation();" onclick="playStation();">Play Space Station Sounds</button>
+    <br>
+    <br>
+    <h2>Sandbox</h2>
+    <br>
+    <div id="sandboxText">Text to play with</div>
+    <script>
+        var phunText1 = "This is my ";
+        var phunText2 = "phun text.";
+        var i = 6;
+        var j = 7;
+        var exp = 6 ** 2;
+        exp--;
+        evenTest = exp % 2;
+        document.getElementById("sandboxText").innerHTML = evenTest;
+    </script>
+
+    <!--work with the class stuff-->
+    <script>
+        //define some objects
+        var smSquare = new Rectangle(5, 5, 1, 7);
+        var lgRect = new Rectangle(12, 17, 2, 6);
+    </script>
+<br>
+<br>
+    <Button>Calculate smSquareArea</Button>
+</body>
+
+</html>
