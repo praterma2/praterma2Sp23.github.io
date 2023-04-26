@@ -10,3 +10,16 @@ header{
 #bdClose{
     text-align: center;
 }
+
+nav{
+    height: 8500px;
+    width: 200px;
+    float:left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
